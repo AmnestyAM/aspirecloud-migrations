@@ -10,7 +10,7 @@ return
         'default_migration_table' => 'phinxlog',
         'default_environment' => 'development',
         'development' => [
-            'adapter' => 'pgsql',
+            'adapter' => $_ENV['DB_TYPE'] ?? 'pgsql',
             'host' => $_ENV['DB_HOST'],
             'name' => $_ENV['DB_NAME'],
             'user' => $_ENV['DB_USER'],
@@ -20,7 +20,7 @@ return
             'charset' => 'utf8',
         ],
         'testing' => [
-            'adapter' => 'pgsql',
+            'adapter' => $_ENV['DB_TYPE'] ?? 'pgsql',
             'host' => $_ENV['DB_HOST'],
             'name' => $_ENV['DB_NAME'],
             'user' => $_ENV['DB_USER'],
@@ -30,7 +30,7 @@ return
             'charset' => 'utf8',
         ],
         'production' => [
-            'adapter' => 'pgsql',
+            'adapter' => $_ENV['DB_TYPE'] ?? 'pgsql',
             'host' => $_ENV['DB_HOST'],
             'name' => $_ENV['DB_NAME'],
             'user' => $_ENV['DB_USER'],
