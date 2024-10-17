@@ -26,7 +26,7 @@ final class CollectRequestData extends AbstractMigration
             ->addColumn('request_body', 'json', ['null' => true])
             ->addColumn('request_headers', 'json', ['null' => false])
             ->addColumn('response_code', 'integer', ['null' => false])
-            ->addColumn('response_body', 'json', ['null' => true])
+            ->addColumn('response_body', 'text', ['null' => true])
             ->addColumn('response_headers', 'json', ['null' => false])
             ->addColumn('created_at', 'datetime', ['default' => 'NOW()'])
             ->create();
