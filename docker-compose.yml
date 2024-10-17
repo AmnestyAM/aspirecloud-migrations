@@ -1,0 +1,8 @@
+services:
+  cli:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
