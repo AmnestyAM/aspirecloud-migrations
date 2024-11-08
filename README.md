@@ -1,7 +1,7 @@
 # AspireCloud Migrations
 
 This repository serves as a central location for the database migrations that power both AspireCloud and AssetGrabber.
-Users of either project will recieve this as a submodule that they can use to run the migrations for the projects.
+Users of either project will receive this as a submodule that they can use to run the migrations for the projects.
 
 ## Usage
 
